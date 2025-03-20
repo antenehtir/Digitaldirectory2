@@ -1483,7 +1483,7 @@ specialtyCategory: "orthopedic",
     "https://maps.app.goo.gl/EpCLQKBAKFcLRYT88?g_st=atm",
     "https://maps.app.goo.gl/QWcejGM3CbdGbsqeA"
   ],
-  contact: "9485, +251908696969 , 0908656565 ",
+  contact: "9485 / +251908696969 / 0908656565 ",
   telegram: "https://t.me/Pioneerdiagnostic",
   website: "https://www.pdc-et.com/index.html",
   email: "info@pdc-et.com",
