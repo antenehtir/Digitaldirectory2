@@ -1514,7 +1514,7 @@ specialtyCategory: "orthopedic",
   specialServices: "",
   specialtyCategory: "",
   subCity: "yeka",
-  area: "yeka sub city area",
+  area: ["yeka", "yeka sub city area", "yeka area"],
   location: "Yeka sub city, behind Lex Plaza building, adjacent to Saron Orthopedic Center. Yeka Sub-City",
   map: "https://maps.google.com/?cid=1016156997315661479&entry=gps&g_st=atm",
   contact: "8035 / +251911225464 / +251118684868 / +251111263626 / +251118681323/24",
@@ -1522,7 +1522,76 @@ specialtyCategory: "orthopedic",
   website: "https://www.tebitambulance.com/",
   email: "info@tebitambulance.com",
   availability: "24/7"
+},
+{
+  id: 81,
+  name: "Gize Psychiatric and Rehabilitation Center",
+  facilityType: "speciality",
+  specialty: "Comprehensive psychiatry service (Substance Rehabilitation, Emergency Psychiatry Admission, Child and adolescent psychiatry)",
+  specialServices: "",
+  specialtyCategory: "psychiatry",
+  subCity: "yeka", 
+  area: ["yeka", "yeka sub city area", "yeka area"],
+  location: "Yeka area, Yeka Sub-City",
+  map: "https://maps.app.goo.gl/VVrm67h96qTA9hVd6?g_st=atm",
+  contact: "+251989689565 / +251986689565",
+  telegram: "https://t.me/gizepsyciatriccenter",
+  website: "",
+  email: "alemenorbooks@gmail.com",
+  availability: "24/7"
+},
+{
+  id: 82,
+  name: "Asheten Psychiatry & Rehabilitation Specialized Center",
+  facilityType: "speciality",
+  specialty: "Comprehensive psychiatry service (Substance Rehabilitation, Emergency Psychiatry Admission, Child and adolescent psychiatry)",
+  specialServices: "Neuropsychiatry, Psychotherapy, Geriatric psychiatry, marriage counselling, family therapy, psychological Assist, speech, yoga, art, music, occupational therapy",
+  specialtyCategory: "psychiatry",
+  subCity: "bole",
+  area: "figa",
+  location: "Figa traffic light 155m on the way to Goro, Bole Sub-City",
+  map: "https://maps.app.goo.gl/NCtfLmbYmtYNNSqn9?g_st=atm",
+  contact: "+251963269487 / +251953404142 / +251116676979",
+  telegram: "https://t.me/ashetenmentalhealth",
+  website: "ashetenpsy.com",
+  email: "ashetenpsyche369@gmail.com",
+  availability: "24/7"
+},
+{
+  id: 83,
+  name: "Renascent Mental Health and Rehabilitation Center",
+  facilityType: "speciality",
+  specialty: "Comprehensive psychiatry service (Inpatient Rehabilitation, outpatient treatment for substance related disorder, Assessment of Substance Use Behavior, Psychotherapy)",
+  specialServices: "Medication-Assisted Withdrawal Management (Detoxification), Group Therapy, including Weekly Self-Help Groups",
+  specialtyCategory: "psychiatry",
+  subCity: "sheger city",
+  area: "lege tafo",
+  location: "Lege tafo, Sheger City Sub-City",
+  map: "https://maps.app.goo.gl/5mvWX7mRvNLuVcHaA?g_st=atm",
+  contact: "0978496060 / 0941776060",
+  telegram: "https://t.me/renascentrehabcenter",
+  website: "http://renascentrehabcenter.com/",
+  email: "renascentrehab@gmail.com",
+  availability: "24/7"
+},
+{
+  id: 84,
+  name: "Abrhot Specialized Psychotherapy Center",
+  facilityType: "speciality",
+  specialty: "Comprehensive psychological service (pediatric and adolescent care, Assessment, and Testing including personality, Cognitive, developmental milestone, speech-language assessment, adult mental health, and psychotherapy care)",
+  specialServices: "Home based Program, School-based program",
+  specialtyCategory: "psychological center",
+  subCity: "bole",
+  area: ["bole wellosefer", "bole"],
+  location: "Bole, Wellosefer, infront of Tebaber Berta building, Bole Sub-city",
+  map: "https://maps.app.goo.gl/g9W19h1SLgBa5u176?g_st=atm",
+  contact: "+251989737372 / +251911998619 / 091 199 8619",
+  telegram: "",
+  website: "https://www.abrihot.com/",
+  email: "info@abrihot.com",
+  availability: "Mon—Fri: 9:00 am – 6:00 pm, Sat: 9:00 am – 12:00 pm, Sun: Emergency only"
 }
+
 ];	
 
   // Get references to form elements
@@ -1540,8 +1609,8 @@ specialtyCategory: "orthopedic",
   const areaMapping = {
     "arada": ["Sumale tera", "Arat Kilo", "4 kilo", "General Wingate Street", "Printing press", "Pasture", "Tewodros Square", "Arogew Kera"],
     "addis ketema": ["Medhanialem roundabout"],
-   "yeka": ["Minilik Hospital area", "Megenagha", "shola", "Kebena Round about", "Yeka Sub city Area", "Kebena", "CMC road", "Shola", "Gurd shola"],
-    "bole": ["24", "Bole homes", "Bole medhanialem", "Haya Hulet","urrael", "Gazebo Square", "bole alem cinema", "Bole Medhanialem", "Gerji", "Bole", "Fiyel bet", "Bole Rwanda", "bole airport", "Bole bulbula", "Capital Hotel"],
+   "yeka": ["Minilik Hospital area", "Megenagha", "shola", "Kebena Round about", "Yeka Sub city Area","yeka area","yeka", "Kebena", "CMC road", "Shola", "Gurd shola"],
+    "bole": ["24", "Bole homes","Bole wellosefer",  "Bole medhanialem", "Haya Hulet","urrael", "Gazebo Square", "bole alem cinema", "Bole Medhanialem", "Figa", "Gerji", "Bole", "Fiyel bet", "Bole Rwanda", "bole airport", "Bole bulbula", "Capital Hotel"],
     "gullele": ["Gullele", "kebena", "Enkulal Fabrica"],
     "kirkos": ["Gotera Condominium", "Kazanchis", "Addis Ababa Stadium", "Genet Hotel", "Kera", "Kera bulgaria mazoria", "Cherkos", "Wello sefer","Wello sefer garad moll",  "Gotera", "Bulgaria"],
     "kolfe": ["Kolfe", "Sefere selam", "Torhayloch", "Ayertena", "Total 3kuter Mazoria", "Bethel", "Alert hospital area"],
@@ -1549,7 +1618,7 @@ specialtyCategory: "orthopedic",
     "nifas silk-lafto": ["Sarbet", "Jemo", "Jemo 3", "Gofa", "Bisrate Gabriel"],
     "akaki-kaliti": [],
     "lemi kura": ["CMC", "Goro", "Ayat", "Sunshine real estate meri lokie", "Feyel bet", "CMC Michael", "Wossen area"],
-    "sheger city": ["Furi"]
+    "sheger city": ["Furi", "Lege tafo"]
   };
 
  // Function to populate the area dropdown and datalist
@@ -1604,12 +1673,12 @@ specialtyCategory: "orthopedic",
     let filtered = facilities.filter(f => {
       if (f.facilityType !== facilityType) return false;
       if (subCity) {
-        if (typeof f.subCity === "string") {
-          if (f.subCity.trim().toLowerCase() !== subCity) return false;
-        } else if (Array.isArray(f.subCity)) {
-          if (!f.subCity.some(item => item.trim().toLowerCase() === subCity)) return false;
-        }
-      }
+  if (typeof f.subCity === "string") {
+    if (!f.subCity.trim().toLowerCase().includes(subCity)) return false;
+  } else if (Array.isArray(f.subCity)) {
+    if (!f.subCity.some(item => item.trim().toLowerCase().includes(subCity))) return false;
+  }
+}
       if (area) {
         if (f.area) {
           if (typeof f.area === "string") {
